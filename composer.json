@@ -1,0 +1,39 @@
+{
+  "name": "ergnuor/table-data-gateway",
+  "description": "",
+  "keywords": ["table", "data", "gateway"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Denis Tarasov",
+      "email": "brokeneye@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:Ergnuor/ergnuor-criteria.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:Ergnuor/ergnuor-data-getter.git"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ergnuor/criteria": "0.1.0",
+    "ergnuor/data-getter": "0.1.0",
+    "symfony/serializer": "6.3.*"
+  },
+  "suggest": {
+    "doctrine/dbal": "For Doctrine DBAL implementations",
+    "doctrine/orm": "For Doctrine ORM implementations"
+  },
+  "autoload": {
+    "psr-4": {"Ergnuor\\TableDataGateway\\": "src/"}
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
